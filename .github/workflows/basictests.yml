@@ -1,0 +1,21 @@
+name: My Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  my-job:
+    name: lab9-basic-tests 
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test1
+        run: bash validate-data.sh "pearse mcarthy" "0831122334"
+
+      - name: Test2
+        run: bash validate-data.sh "pearse mcarthy" "08311223344"
+
+      - name: Test3
+        run: bash validate-data.sh "pearseT mcarthy" "0831122334"
