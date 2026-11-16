@@ -1,0 +1,61 @@
+    
+  502  gh repo create lab9 --public
+  503  ls
+  504  mkdir week9
+  505  ls
+  506  cd week9
+  507  git clone git@github.com:DCoder200/lab9.git
+  508  ls
+  509  cd week9
+  510  cd lab9
+  511  ls
+  512  git init
+  513  git status
+  514  echo "" > validate-data.sh
+  515  nano validate-data.sh
+  516  cat validate-data.sh
+  517  bash validate-data.sh "DCoder200" "085100000"
+  518  nano validate-data.sh
+  519  bash validate-data.sh "DCoder200" "085100000"
+  520  bash validate-data.sh "DCoder200" "67"
+  521  nano validate-data.sh
+  522  bash validate-data.sh "pearse mcarthy" "0831122334"
+  523  nano validate-data.sh
+  524  bash validate-data.sh "pearse mcarthy" "0831122334"
+  525  nano validate-data.sh
+  526  bash validate-data.sh "pearse mcarthy" "0831122334"
+  527  bash validate-data.sh "pearse mcarthy" "08311223344"
+  528  bash validate-data.sh "pearseT mcarthy" "0831122334"
+  529  ls
+  530  git add validate-data.sh
+  531  git commit -m "bash script added"
+  532  git push origin main
+  533  git pull
+  534  git push origin main
+  535  ls
+  536  git pull
+  537  git checkout -b test
+  538  nano validate-data.sh
+  539  bash validate-data.sh "pearse mcarthy" "0831122334"
+  540  nano validate-data.sh
+  541  bash validate-data.sh "pearse mcarthy" "0831122334"
+  542  git add validate-data.sh
+  543  git commit -m "updated bash script"
+  544  git push origin test
+  545  git fetch origin 
+  546  git fetch origin main
+  547  git merge origin main
+  548  echo "" > somefile.txt
+  549  git add somefile.txt
+  550  git commit -m "pushing to test"
+  551  git push origin test
+  552  git fetch origin main
+  553  git merge origin/main
+  554  git push origin test
+  555  git checkout main
+  556  git pull
+  557  history>history.txt
+  558  ls
+  559  nano history.txt
+  560  git checkout test
+  561  history>history.txt
