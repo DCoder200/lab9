@@ -6,7 +6,7 @@ name_in=$1
 mobile_in=$2
 
 # if statement, make sure to use double [[]] for &&
-if [[ $name_in == $name && $mobile_in == $mobile ]]; then
+if [[ $name_in == $name && ${#name_in} -le 20 && $mobile_in == $mobile ]]; then
     echo "PASS"
 else
     echo "FAIL"
